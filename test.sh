@@ -1,5 +1,8 @@
 #!/bin/bash
 
+while true
+do
+
 status=$(git status)
 
 echo "$status"
@@ -19,3 +22,5 @@ if [["$status" == *"Your branch is up to date with"*]]; then
   echo "need to pull"
 	git pull origin main
 fi
+
+done
