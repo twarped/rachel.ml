@@ -2,7 +2,7 @@
 
 status=$(git status)
 
-#echo "$status"
+echo "$status"
 
 line_count=$(($(printf "%s\n" "$status" | wc -l) - 1))
 
@@ -13,6 +13,9 @@ if (($line_count >= 7)); then
 	git add .
 	git commit -m "placeholder"
 	git push origin main
-#else
-  #echo "no need to push"
+fi
+
+if [["$status" == *"Your branch is up to date with"*]]; then
+  echo "need to pull"
+	git pull origin main
 fi
