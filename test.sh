@@ -5,7 +5,7 @@ do
 
 status=$(git status)
 
-echo "$status"
+#echo "$status"
 
 line_count=$(($(printf "%s\n" "$status" | wc -l) - 1))
 
