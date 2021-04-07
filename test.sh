@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#while true
-#do
+while true
+do
 
 status=$(git status)
 
-echo "$status"
+#echo "$status"
 
 line_count=$(($(printf "%s\n" "$status" | wc -l) - 1))
 
@@ -23,4 +23,4 @@ if [[ "$status" == *"committed"* && "$status" == *"modified:"* ]]; then
 	git push origin main
 fi
 
-#done
+done
