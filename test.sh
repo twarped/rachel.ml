@@ -3,6 +3,8 @@
 while true
 do
 
+git fetch
+
 status=$(git status)
 
 #echo "$status"
