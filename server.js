@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
   res.render(__dirname+"/views/index.html");
 });
 
-app.listen(80, () => {
-  console.log("80 is the port");
+app.listen(3000, () => {
+  console.log("3000 is the port");
 })
