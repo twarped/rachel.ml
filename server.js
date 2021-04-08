@@ -24,6 +24,10 @@ app.configure(function(){
   tunnel.on('error', err => {
     console.log(err);
   });
+
+  tunnel.on('request', info => {
+    console.log(JSON.stringify(info));
+  });
 })();
 
 app.get('/', (req, res) => {
