@@ -17,6 +17,8 @@ app.configure(function(){
   // i.e. https://abcdefgjhij.localtunnel.me
   console.log(tunnel.url);
 
+  console.log("current events happening with the tunnel...");
+
   tunnel.on('close', () => {
     console.log('tunnels are closed...');
   });
