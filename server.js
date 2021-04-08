@@ -11,7 +11,7 @@ app.configure(function(){
 });
 
 (async () => {
-  const tunnel = await localtunnel({ port: 3000 , host: 'http://rachel.ml'});
+  const tunnel = await localtunnel({ port: 3000 , host: 'https://rachel.ml'});
 
   // the assigned public url for your tunnel
   // i.e. https://abcdefgjhij.localtunnel.me
