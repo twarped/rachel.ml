@@ -11,7 +11,7 @@ app.configure(function(){
 });
 
 (async () => {
-  const tunnel = await localtunnel({ port: 3000 , sub-domain: 'info' });
+  const tunnel = await localtunnel({ port: 3000 , subdomain: 'info' });
 
   // the assigned public url for your tunnel
   // i.e. https://abcdefgjhij.localtunnel.me
