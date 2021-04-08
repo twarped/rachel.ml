@@ -20,6 +20,10 @@ app.configure(function(){
   tunnel.on('close', () => {
     console.log('tunnels are closed...');
   });
+  
+  tunnel.on('error', err => {
+    console.log(err);
+  });
 })();
 
 app.get('/', (req, res) => {
