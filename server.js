@@ -1,7 +1,7 @@
 var express = require('express')
 var ejs = require('ejs');
 var localtunnel = require('localtunnel');
-var subdomain = process.argv.filter( sub => sub.includes("subdomain="));
+var subdomain = process.argv.filter( sub => sub.includes("subdomain="))[0].split("=")[1];
 
 console.log(subdomain);
 
