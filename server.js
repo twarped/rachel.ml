@@ -2,6 +2,8 @@ var express = require('express')
 var ejs = require('ejs');
 var localtunnel = require('localtunnel');
 
+console.log(process.argv);
+
 var app = express();
 
 app.configure(function(){
