@@ -1,7 +1,7 @@
 var express = require('express')
 var ejs = require('ejs');
 var localtunnel = require('localtunnel');
-var subdomain = typeof process.argv.filter( sub => sub.includes("subdomain="))[0].split("=")[1] != 'undefined' ? process.argv.filter( sub => sub.includes("subdomain="))[0].split("=")[1] : "";
+var subdomain = typeof process.argv.filter( sub => sub.includes("subdomain="))[0] != 'undefined' ? process.argv.filter( sub => sub.includes("subdomain="))[0].split("=")[1] : "";
 
 console.log("trying to get the subdomain: " + subdomain);
 
