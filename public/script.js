@@ -1,1 +1,1 @@
-window.onload = alert("welcome!");
+window.onload = alert("bob!");
